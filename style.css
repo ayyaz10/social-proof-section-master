@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+.outer-container {
+    /* max-width: 919px; */
+    background-image: url('template/images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    padding-bottom: 50px;
+}
+.container {
+
+    /* max-width: 920px; */
+    background-image: url('template/images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top;
+}
+
+.inner-container {
+    min-width: 375px;
+}
+
+.heading {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 450px;
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+
+.heading .heading-text {
+    padding: 26% 5% 0% 5%;
+    font-weight: 700;
+}
+
+p {
+    line-height: 150%;
+    font-size: 15px;
+}
+
+.heading .main-text {
+    padding: 4% 5% 4% 5%;
+    font-weight: 400;
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.ratings .rated-reviews {
+    border-radius: 5px;
+    flex: 1 1 100%;
+    background: hsl(300, 24%, 96%);
+    padding: 3% 0 3% 0;
+    height: 80px;
+    margin: 3% 7% 4% 7%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.ratings .rated-reviews p {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.reviews .review {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 3% 7% 2% 7%;
+    padding: 38px 32px 38px 32px;
+}
+
+.reviews .review .reviewer-img img{
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.reviews .review .status {
+    color: hsl(333, 80%, 67%);
+}
+
+.profile {
+    display: flex;
+}
+
+.profile .profile-info{
+    align-self: center;
+    margin-left: 24px;
+    margin-bottom: 40px;
+}
+
+.profile .profile-info .name{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 920px) {
+    .outer-container {
+        /* max-width: 1020px; */
+        margin: 0 auto;
+        background-image: url('template/images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100%;
+        background-position: right 210%;
+    }
+    .container {
+        /* min-width: 920px; */
+        background-image: url('template/images/bg-pattern-top-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 37%;
+        background-position: contain;
+    }
+    .inner-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .hero-content {
+        display: flex;
+    }
+
+    .heading {
+        text-align: left;
+        
+    }
+
+    .heading .heading-text {
+        font-size: 36px;
+        
+    }
+
+    .ratings {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 540px;
+        padding: 12% 0% 0% 0%;
+        /* margin-right: 50px; */
+    }
+
+    .ratings .rated-reviews {
+        border-radius: 5px;
+        background: hsl(300, 24%, 96%);
+        padding: 2% 7% 2% 7%;
+        margin: 0% 0% 2.5% 0%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .rated-reviews-1 {
+        align-self: flex-start;
+    }
+
+    .rated-reviews-2 {
+        align-self: center;
+    }
+
+    .rated-reviews-3 {
+        align-self: flex-end;
+    }
+
+    .stars {
+        margin-right: 30px;
+    }
+
+    .reviews {
+        /* border: 1px solid red; */
+        /* flex-direction: column; */
+
+        flex-wrap: nowrap;
+        height: 420px;
+        padding: 38px 32px 38px 32px;
+        /* justify-content: center; */
+    }
+
+    .reviews .review {
+        flex: 1 1;
+        /* padding: 0px 0px 0px 0px; */
+        margin: 3% 1% 2% 1%;
+
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .reviews .review-1 {
+        align-self: flex-start;
+    }
+    .reviews .review-2 {
+        align-self: center;
+    }
+    .reviews .review-3 {
+        align-self: flex-end;
+    }
+
+    .profile .profile-info{
+        margin-bottom: 30px;
+    }
+    
+
+}
+
+
